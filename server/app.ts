@@ -11,6 +11,7 @@ export default class App {
   public listen() {
     this.app.listen(80, () => {
       console.log(`Example app listening on the port 80`);
+      console.log(`test1`);
     });
   }
 
