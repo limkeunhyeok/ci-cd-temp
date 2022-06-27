@@ -1,14 +1,16 @@
 FROM node
 
-# set working directory
-WORKDIR /
+WORKDIR /app
 
-COPY . /
+COPY package.json ./
+COPY tsconfig.json ./
 
-# update apt packages
-ARG env
-ENV APP_ENV=$env 
 RUN npm install
+
+ENV NODE_ENV=production
+
+COPY . .
+
 RUN npm run build
 
 EXPOSE 80
