@@ -9,8 +9,8 @@ export default class App {
   }
 
   public listen() {
-    this.app.listen(3000, () => {
-      console.log(`Example app listening on the port 3000`);
+    this.app.listen(80, () => {
+      console.log(`Example app listening on the port 80`);
     });
   }
 
