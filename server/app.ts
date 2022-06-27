@@ -24,5 +24,6 @@ export default class App {
     this.app.use(express.urlencoded({ extended: true }));
     this.app.get("/", (req, res) => res.send("ok"));
     this.app.get("/test", (req, res) => res.send("ok"));
+    this.app.get("/test3", (req, res) => res.send("test3!"));
   }
 }
