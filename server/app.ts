@@ -23,5 +23,6 @@ export default class App {
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: true }));
     this.app.get("/", (req, res) => res.send("ok"));
+    this.app.get("/test", (req, res) => res.send("ok"));
   }
 }
